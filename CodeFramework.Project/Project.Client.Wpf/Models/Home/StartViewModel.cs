@@ -15,6 +15,7 @@ namespace Project.Client.Wpf.Models.Home
         public void LoadActions()
         {
             Actions.Clear();
+            //Un comentario MAS
 
             // TODO: The following list of actions is used to populate the application's main navigation area (such as a menu or a home screen)
 
