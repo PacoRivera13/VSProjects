@@ -28,5 +28,20 @@ var ProfilesViewModel = function () {
     // Public data properties
     self.Profiles = ko.observableArray([]);
     refresh();
+
+    self.createProfile = function () {
+        alert("Crear un nuevo cliente");
+    };
+
+    self.editProfile = function (profile) {
+        alert("Editar al cliente:" + profile.ProfileId);
+    };
+
+    self.removeProfile = function (profile) {
+        if (confirm("Seguro de eliminar?")) {
+            self.Profiles.remove(profile);
+        }
+    };
 };
 ko.applyBindings(new ProfilesViewModel());
+

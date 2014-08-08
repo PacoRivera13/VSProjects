@@ -11,7 +11,9 @@
             </tr>
             <tbody data-bind="foreach: Profiles">
                 <tr">
-                    <td data-bind="text: FirstName"></td>
+                    <td class="name">
+                        <a data-bind="text: FirstName, click: $parent.editProfile"></a>
+                    </td>
                     <td data-bind="text: LastName"></td>
                     <td data-bind="text: Email"></td>
                     <td>
